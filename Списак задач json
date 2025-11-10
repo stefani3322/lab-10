@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Запустить программу",
+            "type": "shell",
+            "command": "python main.py",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Собрать проект",
+            "type": "shell",
+            "command": "npm run build",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Запустить тесты",
+            "type": "shell",
+            "command": "npm test",
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "Очистить проект",
+            "type": "shell",
+            "command": "rm -rf dist",
+            "problemMatcher": []
+        }
+    ]
+}
